@@ -1,5 +1,5 @@
 import java.time.LocalDate;
-import java.util.ArrayList;
+
 public class Loan {
     private String name;
     private Member member;

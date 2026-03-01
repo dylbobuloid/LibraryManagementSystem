@@ -13,4 +13,9 @@ public class Book {
         this.availabilityStatus = true;
     }
 
+    public void removeBook(int ISBN){
+
+
+    }
+
 }

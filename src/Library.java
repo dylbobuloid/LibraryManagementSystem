@@ -7,7 +7,10 @@ public class Library {
 
     private void addMember(Member member){
         members.add(member);
+    }
 
+    private void addBook(Book book){
+        booksInLibrary.add(book);
     }
 
 }

@@ -13,9 +13,8 @@ public class Book {
         this.availabilityStatus = true;
     }
 
-    public void removeBook(int ISBN){
-
-
+    public void bookBorrowed(){
+        this.availabilityStatus = false;
     }
 
 }

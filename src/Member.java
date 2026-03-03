@@ -9,4 +9,9 @@ public class Member {
         this.memberId = id;
 
     }
+
+    private void borrowBook(Book book){
+        booksBorrowed.add(book);
+        book.bookBorrowed();
+    }
 }

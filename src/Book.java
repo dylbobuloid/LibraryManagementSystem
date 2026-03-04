@@ -13,8 +13,15 @@ public class Book {
         this.availabilityStatus = true;
     }
 
-    public void bookBorrowed(){
+    public void borrow(){
         this.availabilityStatus = false;
     }
 
+    public void bookReturn(){
+        this.availabilityStatus = true;
+    }
+
+    public boolean isAvailabilityStatus() {
+        return availabilityStatus;
+    }
 }

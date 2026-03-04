@@ -10,8 +10,18 @@ public class Member {
 
     }
 
-    private void borrowBook(Book book){
-        booksBorrowed.add(book);
-        book.bookBorrowed();
+    public void borrowBook(Book book){
+        if(book.isAvailabilityStatus()) {
+            booksBorrowed.add(book);
+            book.borrow();
+        }else{
+            System.out.println("That book is not available to borrow");
+            System.out.println("Please try another book.");
+        }
+    }
+
+    public void returnBook(Book book){
+        book.bookReturn();
+        booksBorrowed.remove(book);
     }
 }

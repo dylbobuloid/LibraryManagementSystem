@@ -24,4 +24,5 @@ public class Book {
     public boolean isAvailabilityStatus() {
         return availabilityStatus;
     }
+
 }

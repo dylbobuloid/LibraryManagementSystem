@@ -1,17 +1,18 @@
 import java.time.LocalDate;
 
 public class Loan {
-    private String name;
+    private Book book;
     private Member member;
     private LocalDate date;
 
-    public Loan(String name, Member member){
-        this.name = name;
+    public Loan(Book book, Member member){
+        this.book = book;
         this.member = member;
         date = LocalDate.now();
 
     }
 
-
-
+    public Book getBook() {
+        return book;
+    }
 }

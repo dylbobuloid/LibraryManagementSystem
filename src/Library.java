@@ -104,5 +104,13 @@ public class Library {
         }
     }
 
+    public void viewAvailableBooks(){
+        System.out.println("<----AVAILABLE BOOKS---->");
+        for(Book b: booksInLibrary){
+            if(b.isAvailabilityStatus()){
+                System.out.println(b.toString());
+            }
+        }
+    }
 
 }

@@ -3,22 +3,23 @@ import java.util.ArrayList;
 
 public class Library {
     private ArrayList<Book> booksInLibrary = new ArrayList<>();
-    private ArrayList<Member> members= new ArrayList<>();
+    private ArrayList<Member> members = new ArrayList<>();
     private ArrayList<Loan> activeLoans = new ArrayList<>();
-    private void addMember(Member member){
+
+    private void addMember(Member member) {
         members.add(member);
     }
 
-    private void addBook(Book book){
+    private void addBook(Book book) {
         booksInLibrary.add(book);
     }
 
-    public void checkoutBook(Member member, Book book){
-        if (book.isAvailabilityStatus()){
+    public void checkoutBook(Member member, Book book) {
+        if (book.isAvailabilityStatus()) {
             book.borrow();
             Loan loan = new Loan(book, member);
             activeLoans.add(loan);
-        }else{
+        } else {
             System.out.println("This book is not available please try another book!");
         }
 
@@ -44,7 +45,4 @@ public class Library {
 
     }
 
-
 }
-
-

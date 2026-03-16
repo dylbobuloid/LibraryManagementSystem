@@ -25,4 +25,20 @@ public class Book {
         return availabilityStatus;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public int getISBN() {
+        return ISBN;
+    }
+
+    @Override
+    public String toString() {
+        return title + " " + author + " " + String.valueOf(ISBN);
+    }
 }

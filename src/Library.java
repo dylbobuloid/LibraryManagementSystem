@@ -95,4 +95,14 @@ public class Library {
         }
     }
 
+    public void viewMembersBooks(Member member){
+        System.out.println("<----" + member.getName() + " BOOKS---->");
+        for(Loan l: activeLoans){
+            if(l.getMember().equals(member)){
+                System.out.println(l.getBook().toString());
+            }
+        }
+    }
+
+
 }

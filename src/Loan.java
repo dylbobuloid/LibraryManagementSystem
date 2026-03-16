@@ -15,4 +15,8 @@ public class Loan {
     public Book getBook() {
         return book;
     }
+
+    public Member getMember() {
+        return member;
+    }
 }

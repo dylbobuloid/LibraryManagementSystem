@@ -24,4 +24,8 @@ public class Member {
         book.bookReturn();
         booksBorrowed.remove(book);
     }
+
+    public String getName() {
+        return name;
+    }
 }

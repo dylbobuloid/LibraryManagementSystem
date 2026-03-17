@@ -7,11 +7,11 @@ public class Library {
     private ArrayList<Member> members = new ArrayList<>();
     private ArrayList<Loan> activeLoans = new ArrayList<>();
 
-    private void addMember(Member member) {
+    public void addMember(Member member) {
         members.add(member);
     }
 
-    private void addBook(Book book) {
+    public void addBook(Book book) {
         booksInLibrary.add(book);
     }
 

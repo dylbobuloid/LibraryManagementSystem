@@ -113,4 +113,13 @@ public class Library {
         }
     }
 
+    public void checkOverdue(){
+        System.out.println("<----OVERDUE BOOKS---->");
+        for(Loan l:activeLoans){
+            if(l.checkIfOverdue()){
+                System.out.println(l.getBook());
+            }
+        }
+    }
+
 }
